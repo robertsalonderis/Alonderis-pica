@@ -75,8 +75,29 @@ public class GitPica {
 	        mikla = "Klasiskâ";
 	    
 	    mikla = "Klasiskâ";
+	    
+	  //Pica
+	    System.out.println("Visas picas ir ar sieru.");
+	    System.out.print("Kâda veida picu vçlaties? (S)Studentu, (M)Margarita, (P)Pepperoni, (H)Havaju, (Q)BBQ lielopa vai (G)Grieíu (Ievadi S, M, P, H, Q vai G): ");
+	    picasVeids = scan.nextLine().charAt(0);
 
-
+	    if (picasVeids == 'S' || picasVeids == 's') {
+	    	pica = "Studentu";
+	    } else if (picasVeids == 'M' || picasVeids == 'm') {
+	    	pica = "Margarita";
+	    } else if (picasVeids == 'P' || picasVeids == 'p') {
+	    	pica = "Pepperoni";
+	    } else if (picasVeids == 'H' || picasVeids == 'h') {
+	    	pica = "Havaju";
+	    }else if (picasVeids == 'Q' || picasVeids == 'q') {
+	    	pica = "BBQ lielopa";
+	    }else if (picasVeids == 'G' || picasVeids == 'g') {
+	    	pica = "Grieíu";
+	    } else if (picasVeids != 'S' && picasVeids != 's' || picasVeids != 'M' && picasVeids != 'm' || picasVeids != 'P' && picasVeids != 'p' || picasVeids != 'H' && picasVeids != 'h' || picasVeids != 'Q' && picasVeids != 'q' || picasVeids != 'G' && picasVeids != 'g') {
+	    	System.out.println("Mums nav pieejama ðâda veida pica, jûsu pica bûs izvçlçta, kâ Studentu. ");
+	    	pica = "Studentu";
+	    }
+	    pica = "Studentu";
 	}
 
 }
