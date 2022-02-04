@@ -41,6 +41,23 @@ public class GitPica {
 	    	piegadesMaksa = 2.00;
 	        System.out.println("Jûsu piegâdes maksa: $" + df.format(piegadesMaksa));
 	    }
+	    
+	  //Pica(lielums)
+	    System.out.print("Cik lielu picu vçlaties(lielums cm)? (24, 30, 40, or 50) ");
+	    lielums = scan.nextInt();
+	    if (lielums == 20) {
+	        maksa = 7.10;
+	    } else if (lielums == 30) {
+	    	maksa = 8.35;
+	    } else if (lielums == 40) {
+	    	maksa = 12.00;
+	    } else if (lielums == 50) {
+	    	maksa = 17.10;
+	    } else if (lielums != 24 && lielums != 30 && lielums != 40 && lielums != 50) {
+	        System.out.println("Mums nav ðada lieluma picas, automâtiski izvçlçta 30cm.");
+	        maksa = 8.35;
+	    }
+	    scan.nextLine();
 	}
 
 }
