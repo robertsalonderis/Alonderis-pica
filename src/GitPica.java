@@ -58,6 +58,7 @@ public class GitPica {
 	        maksa = 8.35;
 	    }
 	    scan.nextLine();
+
 	    
 	    //Pica(mîkla)
 	    System.out.print("Kâda veida mîklu vçlaties? (B)Biezâ, (C)Klasiskâ, vai (K)Kraukðíîgâ (Ievadi B, C, vai K,): ");
@@ -74,6 +75,8 @@ public class GitPica {
 	        mikla = "Klasiskâ";
 	    
 	    mikla = "Klasiskâ";
+
+
 	}
 
 }
