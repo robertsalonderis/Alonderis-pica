@@ -98,6 +98,27 @@ public class GitPica {
 	    	pica = "Studentu";
 	    }
 	    pica = "Studentu";
-	}
+	    
+	    
+	 // Aprçíins
+	    System.out.println("Picas cena: "+maksa);
+	    //System.out.println(piedevuSkaits);
+	    System.out.println("Piegâdes maksa: "+piegadesMaksa);
+	    System.out.println("\n");
+	    summa = (maksa) + (piegadesMaksa);
+	    pvn = summa * pvnLikme;
+	    kopSumma = summa * (1 + pvnLikme);
 
+	    // Izvade
+	    System.out.println(vards + ", te ir jûsu pasûtijums:");
+	    System.out.println(lielums + " cm pica");
+	    System.out.println(mikla + ", " + pica);
+	    System.out.println("Cena: $" + df.format(summa));
+	    System.out.println("PVN: $" + df.format(pvn));
+	    System.out.println("Kopsumma: $" + df.format(kopSumma));
+	    System.out.print("\n");
+	    System.out.println("Piegâdes vieta: "+adrese);
+	    
+	    scan.close();
+	}
 }
