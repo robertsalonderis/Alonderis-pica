@@ -9,6 +9,6 @@ Java picērijas projekts, kurš tiek versionēts ar Git. :pizza:
 - [x] Izveidota GitHub krātuve
 - [x] Lokālais Java projekts izvietots GitHub
 - [x] izveidot README.md failu
-- [] Veikt izstrādātās picērijas programmas izgrūšanu
-- [] Lokāli programmu papildināt ar jaunu funkcionalitāti
+- [x] Veikt izstrādātās picērijas programmas izgrūšanu
+- [x] Lokāli programmu papildināt ar jaunu funkcionalitāti
 - [] Lietotājvārdu „Bugsters104” piesaistīt savam projektam kā līdzdalībnieku
