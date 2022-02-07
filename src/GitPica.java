@@ -19,6 +19,10 @@ public class GitPica {
 	    double pvn;
 	    double summa;
 	    double kopSumma;
+	    int picasSastavdalas = 0;
+	    int picasSastavdalas2 =0;
+	    int picasSastavdalas3;
+	    String sastavdalas = "Siers";
 	    
 	    System.out.println("Vârds un uzvârds: ");
 	    vards = scan.nextLine();
@@ -99,13 +103,38 @@ public class GitPica {
 	    }
 	    pica = "Studentu";
 	    
+	    System.out.println("Papildu piedevas maksâ 1,25 eiro katrs, izvçlieties kâdu no pepperoni vai cîsiòus." );
+
+	 // Pepperoni
+	 System.out.println("Vai gribi pepperoni? (J/N)" );
+	 picasSastavdalas = scan.nextLine().charAt(0);
+	 if (picasSastavdalas == 'J' || picasSastavdalas == 'j' ){
+		 picasSastavdalas = 1;
+		 sastavdalas = sastavdalas + " un Pepperoni";}
+	 else{
+		 picasSastavdalas = 0;
+	 }
+
+	 //Sausage
+	 System.out.println("Vai gribi cîsiòus? (J/N)" );
+	 picasSastavdalas2 = scan.nextLine().charAt(0);
+	 if (picasSastavdalas2 == 'J' || picasSastavdalas2 == 'j' ){
+		 picasSastavdalas2 = 1;
+		 sastavdalas = sastavdalas + " un cîsiòi";}
+	 else{
+		 picasSastavdalas2 = 0;} 
+
+
+	 picasSastavdalas3 = (picasSastavdalas) + (picasSastavdalas2);
+	    
 	    
 	 // Aprçíins
 	    System.out.println("Picas cena: "+maksa);
-	    //System.out.println(piedevuSkaits);
 	    System.out.println("Piegâdes maksa: "+piegadesMaksa);
+	    System.out.println("Picas sastâvdaïas: "+picasSastavdalas3);
 	    System.out.println("\n");
-	    summa = (maksa) + (piegadesMaksa);
+	    summa = (maksa) + (picasSastavdalas3 * 1.25) + (piegadesMaksa);
+	    //summa = (maksa) + (piegadesMaksa);
 	    pvn = summa * pvnLikme;
 	    kopSumma = summa * (1 + pvnLikme);
 
