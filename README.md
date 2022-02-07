@@ -11,4 +11,4 @@ Java picērijas projekts, kurš tiek versionēts ar Git. :pizza:
 - [x] izveidot README.md failu
 - [x] Veikt izstrādātās picērijas programmas izgrūšanu
 - [x] Lokāli programmu papildināt ar jaunu funkcionalitāti
-- [] Lietotājvārdu „Bugsters104” piesaistīt savam projektam kā līdzdalībnieku
+- [x] Lietotājvārdu „Bugsters104” piesaistīt savam projektam kā līdzdalībnieku
